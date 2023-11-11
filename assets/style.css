@@ -385,3 +385,57 @@ section {
   color: var(--main-color);
   padding-bottom: .5rem;
 }
+
+/* skills section */
+.skills{
+  min-height: auto;
+  padding-bottom: 5rem;
+  background: var(--second-bg-color);
+}
+
+.skills-box .skills-content{
+  position: relative;
+  border: .2rem solid var(--main-color);
+  border-radius: 1rem;
+  padding: .5rem 1.5rem;
+  overflow: hidden;
+}
+
+.skills-content .progress-custom h3{
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-content .progress-custom .bar{
+  height: 2.5rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--main-color);
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.skills-content .progress-custom .bar span{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: .3rem;
+  background: var(--main-color);
+}
+
+.skills-content .progress-custom:nth-child(1) .bar span{
+  width: 95%;
+}
+
+.skills-content .progress-custom:nth-child(2) .bar span{
+  width: 90%;
+}
+
+.skills-content .progress-custom:nth-child(3) .bar span{
+  width: 93%;
+}
+
+.skills-content .progress-custom:nth-child(4) .bar span{
+  width: 97%;
+}
+
