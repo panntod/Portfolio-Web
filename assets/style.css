@@ -393,6 +393,23 @@ section {
   background: var(--second-bg-color);
 }
 
+.skills-card{
+  min-height: 25rem;
+  padding: 3rem;
+  border: .2rem solid var(--main-color);
+  border-radius: 1rem;
+}
+
+.skills-card h2{
+  text-align: center;
+  font-size: 2.5rem;
+  font-size: 900;
+}
+
+.skills-card p{
+  font-size: 1.4rem;
+}
+
 .skills-box .skills-content{
   position: relative;
   border: .2rem solid var(--main-color);
@@ -439,3 +456,33 @@ section {
   width: 97%;
 }
 
+/* footer */
+.footer {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 1rem;
+  padding: 2rem 0;
+}
+
+.footer-title {
+  color: #212121;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-subtitle {
+  color: #212121;
+  font-size: 1.4rem;
+}
+
+.footer-social i {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.footer-copy {
+  font-size: 1.2rem;
+  color: #000;
+}
