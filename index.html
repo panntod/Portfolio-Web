@@ -1,90 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pan Portfolio</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="public/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pan Portfolio</title>
 
-    <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/style.css" />
 
-  <body>
-    <!-- header design -->
-    <header class="header">
-      <a href="#" class="logo"
-        >Panntod<span style="color: rgb(0, 0, 200)">.</span></a
-      >
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Panntod<span style="color: rgb(0, 0, 200)">.</span></a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-    <!-- home section design -->
-    <section class="home row" id="home">
-      <div class="home-content col-lg-6">
-        <h1>Hi, I'm <span>Pandhu Arya</span></h1>
-        <div class="text-animate">
-          <h3>Frontend Developer</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-            saepe neque officiis alias eaque architecto. Ad soluta nam cum
-            inventore natus at eum, et accusantium labore laborum. Nulla, veniam
-            cumque!
-          </p>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="home row" id="home">
+    <div class="home-content col-lg-6">
+      <h1>Hi, I'm <span>Pandhu Arya</span></h1>
+      <div class="text-animate">
+        <h3>Frontend Developer</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          saepe neque officiis alias eaque architecto. Ad soluta nam cum
+          inventore natus at eum, et accusantium labore laborum. Nulla, veniam
+          cumque!
+        </p>
+      </div>
+
+      <div class="btn-box">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn">Lets Talk</a>
+      </div>
+
+      <div class="home-sosmed">
+        <a href="#" class=""><i class="bx bxl-facebook"></i></a>
+        <a href="#" class=""><i class="bx bxl-instagram"></i></a>
+        <a href="#" class=""><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+
+    <div class="w-auto mx-auto col-lg-6 float-lg-end">
+      <img src="./assets/images/pandhu.svg" alt="..." class="img-fluid" />
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-img">
+      <img src="assets/images/pandhu.png" alt="..." class="img-fluid">
+      <span class="circle-spin"></span>
+    </div>
+
+    <div class="about-content">
+      <h3>Frontend Developer</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vero aut ducimus praesentium dolores tempore ab
+        accusamus laudantium temporibus obcaecati, nesciunt iure omnis earum sequi magni doloremque hic suscipit
+        blanditiis!</p>
+    </div>
+
+    <div class="btn-box btns">
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- education section design -->
+  <section class="education" id="education">
+    <h2 class="heading">My <span>Journey</span></h2>
+    <div class="education-row">
+
+      <div class="education-col">
+        <h3 class="title">Education</h3>
+
+        <div class="education-box"> 
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
         </div>
+      </div>
+      
 
-        <div class="btn-box">
-          <a href="#" class="btn">Hire Me</a>
-          <a href="#" class="btn">Lets Talk</a>
-        </div>
+      <div class="education-col">
+        <h3 class="title">Experience</h3>
 
-        <div class="home-sosmed">
-          <a href="#" class=""><i class="bx bxl-facebook"></i></a>
-          <a href="#" class=""><i class="bx bxl-instagram"></i></a>
-          <a href="#" class=""><i class="bx bxl-github"></i></a>
+        <div class="education-box"> 
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar pe-2"></i> 2017 - 2019</div>
+              <h3 class="fw-medium fs-3">Master Degree - University</h3>
+              <p class="my-3 fw-normal fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum quis sed eveniet dignissimos necessitatibus neque natus adipisci sint tempora similique tenetur suscipit ipsum non doloremque et, saepe beatae perferendis.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="w-auto mx-auto col-lg-6 float-lg-end">
-        <img src="./assets/pandhu.svg" alt="" class="img-fluid" />
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- about section design -->
+  <!-- skills section design -->
 
-    <!-- education section design -->
+  <!-- contact section design -->
 
-    <!-- skills section design -->
+  <!-- footer design -->
 
-    <!-- contact section design -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
+</body>
 
-    <!-- footer design -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="public/script.js"></script>
-  </body>
 </html>
