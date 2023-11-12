@@ -39,13 +39,6 @@ body {
   z-index: 99;
 }
 
-.logo {
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 600;
-}
-
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -67,10 +60,19 @@ body {
   display: none;
 }
 
+@media screen and (max-width:567px) {
+  .header {
+    padding: 2rem 4%;
+  }
+  .navbar a {
+    margin-left: 0;
+  }
+}
+
 /* body section home */
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 5rem 9%;
 }
 
 .home {
@@ -111,7 +113,6 @@ section {
 
 /* home button */
 .btn-box {
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: 34.5rem;
@@ -123,8 +124,6 @@ section {
   position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
   background: var(--main-color);
   border: 0.2rem solid var(--main-color);
   border-radius: 0.8rem;
@@ -133,7 +132,7 @@ section {
   color: var(--text-color);
   z-index: 1;
   overflow: hidden;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .btn-box .btn:nth-child(2) {
