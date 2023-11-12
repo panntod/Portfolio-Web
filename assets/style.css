@@ -124,14 +124,12 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 15rem;
   height: 100%;
   background: var(--main-color);
   border: 0.2rem solid var(--main-color);
   border-radius: 0.8rem;
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 0.1rem;
   color: var(--text-color);
   z-index: 1;
   overflow: hidden;
