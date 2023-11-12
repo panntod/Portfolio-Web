@@ -407,6 +407,14 @@ section {
   font-size: 1.4rem;
 }
 
+.link-project{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-decoration: none;
+  font-size: 2.2rem;
+} 
+
 .skills-box .skills-content{
   position: relative;
   border: .2rem solid var(--main-color);
