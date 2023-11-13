@@ -213,6 +213,16 @@ section {
   width: 100%;
 }
 
+.heading {
+  font-size: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.heading span {
+  color: var(--main-color);
+}
+
 @media screen and (max-width: 768px) {
   .home {
     display: flex;
@@ -235,6 +245,10 @@ section {
   .home-content p {
     font-size: 1.4rem;
   }
+  .heading{
+    font-size: 4rem;
+    
+  }
 }
 
 /* About Section */
@@ -246,16 +260,6 @@ section {
   gap: 2rem;
   background: var(--second-bg-color);
   padding-bottom: 6rem;
-}
-
-.heading {
-  font-size: 5rem;
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.heading span {
-  color: var(--main-color);
 }
 
 .about-img {
@@ -302,10 +306,13 @@ section {
   margin: 2rem 0.6rem;
 }
 
-.btn-box.btns {
-  display: flex;
-  width: 15rem;
+@media screen and (max-width:567px) {
+  .about-content p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
 }
+
 
 /* Education */
 .education {
