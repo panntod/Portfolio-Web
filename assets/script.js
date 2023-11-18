@@ -1,7 +1,3 @@
-// toggle icon navbar
-const menuIcon = document.querySelector("#menu-icon");
-const navbar = document.querySelector(".navbar");
-
 // scroll sections
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
@@ -34,9 +30,27 @@ window.onscroll = () => {
     navBar.classList.remove("bg-navbar");
   }
 
-  // sticky header
-
-  // remove toggle icon and navbar when click navbar links (scroll)
-
   // animation footer on scroll
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav a');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 992) { // Check if viewport is mobile (Bootstrap lg breakpoint)
+                navbarToggler.click(); // Tutup navbar
+            }
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); // Tutup navbar jika sedang terbuka pada saat scroll
+        }
+    });
+});
+
+
