@@ -113,7 +113,6 @@ section {
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: homeBgText 6s linear infinite;
-  animation-delay: 2s;
 }
 
 .home-content .text-animate h3::before{
@@ -126,7 +125,6 @@ section {
   border-right: 2px solid var(--main-color);
   z-index: 1;
   animation: homeCursor 6s linear infinite;
-  animation-delay: 2s;
 } 
 
 .home-content p {
