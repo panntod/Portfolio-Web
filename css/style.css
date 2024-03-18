@@ -772,37 +772,26 @@ main {
 }
 
 /**
- * #clients 
+ * #skill 
  */
-
-.clients {
-  margin-bottom: 15px;
+ .skill {
+  background: var(--border-gradient-onyx);
+  box-shadow: var(--shadow-2);
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.clients-list {
+.skill-list {
+  padding-top: 14px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
+.skill-item img {
+  width: 40px;
 }
 
-.clients-item img {
-  width: 60px;
-  transition: var(--transition-1);
-}
 
 /*-----------------------------------*\
   #RESUME
@@ -1463,10 +1452,8 @@ main {
   /* clients */
 
   .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
+    gap: 5px;
     padding: 45px;
-    scroll-padding-inline: 45px;
   }
 
   .clients-item {
