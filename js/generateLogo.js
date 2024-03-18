@@ -1,4 +1,4 @@
-const skills = ['html', 'css3', 'javascript', 'php', 'java', 'node-js', 'go', 'mysql', 'mongodb', 'react'];
+const skills = ['html', 'css3', 'javascript', 'php', 'java', 'node-js', 'go', 'mysql', 'mongodb', 'react', 'typescript','express','nest','next','prisma'];
 const clientsList = document.querySelector('.clients-list');
 
 skills.forEach(skill => {

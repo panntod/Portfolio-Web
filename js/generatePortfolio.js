@@ -52,8 +52,6 @@ const projectsData = [
     imgSrc: "images/project/munjalindra-website.png",
     category: "Web",
     url: "https://panntod.github.io/Munjalindra-Web/",
-    figmaLink:
-      "https://www.figma.com/file/WimiUyAlFqnBbd5c3AXFj5/RancanganWeb?type=design&node-id=1%3A4&mode=design&t=ra3edPXnrFHmMAEY-1",
   },
   {
     title: "Auction Website",
@@ -73,7 +71,20 @@ const projectsData = [
     category: "Web",
     url: "https://github.com/panntod/MERN-Frontend"
   },
+  {
+    title: "Premium App",
+    imgSrc: "images/project/premium-app.png",
+    category: "Web",
+    url: "https://www.figma.com/file/rIbsiEJviZJW14fbf1QsN5/Draft-TA?type=design&node-id=0%3A1&mode=dev&t=sD6xrj2w4DSxsQAt-1",
+  },
+  {
+    title: "Multiple Role Authentication",
+    imgSrc: "images/project/cafe-app.png",
+    category: "Web",
+    url: "https://github.com/panntod/Cafe-Frontend",
+  },
 ];
+
 function generateProjectCard(project) {
   const { title, imgSrc, category } = project;
 
