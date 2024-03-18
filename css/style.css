@@ -779,6 +779,18 @@ main {
   box-shadow: var(--shadow-2);
   border-radius: 20px;
   padding: 20px;
+  position: relative;
+  padding: 15px;
+  z-index: 1;
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .skill-list {
@@ -790,6 +802,7 @@ main {
 
 .skill-item img {
   width: 40px;
+  height: 40px;
 }
 
 
