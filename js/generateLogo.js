@@ -6,7 +6,7 @@ skills.forEach(skill => {
   listItem.classList.add('skill-item');
 
   const itemHTML = `
-    <img src="images/${skill}.svg" alt="${skill} logo">
+    <img src="images/logo/${skill}.svg" alt="${skill} logo">
   `;
 
   listItem.innerHTML = itemHTML;
