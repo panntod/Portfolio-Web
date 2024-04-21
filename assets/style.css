@@ -17,7 +17,7 @@
   --main-color: #00abf0;
 }
 
-.dark-mode{
+.dark-mode {
   --bg-color: #081b29;
   --second-bg-color: #112e42;
   --navbar-bg-color: #051723;
@@ -30,7 +30,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 65%;
   overflow-x: hidden;
 }
 
@@ -39,7 +39,8 @@ body {
   color: var(--text-color);
 }
 
-/* header navbar */
+/* Navbar */
+
 .header {
   position: fixed;
   top: 0;
@@ -51,8 +52,9 @@ body {
   z-index: 99;
 }
 
-.bg-navbar{
-  background: var(--navbar-bg-color);
+.bg-navbar {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
 }
 
 .navbar a {
@@ -85,7 +87,8 @@ body {
   }
 }
 
-/* body section home */
+/* Home */
+
 section {
   min-height: 100vh;
   padding: 5rem 9%;
@@ -110,22 +113,16 @@ section {
   line-height: 1.3;
 }
 
-.home-content .text-animate {
-  position: relative;
-  width: 50rem;
-}
-
-
 .home-content p {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
+  width: 60rem;
 }
 
-/* home button */
 .btn-box {
   display: flex;
   justify-content: space-between;
-  width: 34.5rem;
+  width: 46rem;
   height: 5rem;
   margin-bottom: 5rem;
 }
@@ -134,13 +131,16 @@ section {
   position: relative;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: var(--main-color);
-  border: 0.2rem solid var(--main-color);
-  border-radius: 0.8rem;
+  border: 0.25rem solid var(--main-color);
+  border-radius: 50rem;
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-color);
   z-index: 1;
+  padding: 2rem 4rem;
+  white-space: nowrap;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -178,7 +178,8 @@ section {
   width: 100%;
 }
 
-/* home sosmed icon */
+/* Sosmed */
+
 .home-sosmed {
   width: 220px;
   display: flex;
@@ -233,13 +234,12 @@ section {
   color: var(--main-color);
 }
 
+/* Toggle Dark Mode */
 
 .ui-switch {
-  /* switch */
   --switch-bg: rgb(135, 150, 165);
   --switch-width: 48px;
   --switch-height: 20px;
-  /* circle */
   --circle-diameter: 32px;
   --circle-bg: rgb(0, 56, 146);
   --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
@@ -305,7 +305,7 @@ section {
   opacity: 0;
 }
 
-/* actions */
+/* Actions */
 
 .ui-switch input:checked + .slider .circle {
   left: calc(100% - var(--circle-diameter));
@@ -327,23 +327,31 @@ section {
     flex-direction: column-reverse;
   }
   .home-content h1 {
-    font-size: 4rem;
-  }
-
-  .home-content .text-animate {
-    position: relative;
-    width: 32.8rem;
+    font-size: 3rem;
   }
 
   .home-content p {
     font-size: 1.4rem;
+    width: auto;
   }
+
   .heading {
     font-size: 4rem;
   }
+
+  .btn-box {
+    width: 33rem;
+    height: 2rem 3rem;
+  }
+
+  .btn-box .btn {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
 }
 
-/* About Section */
+/* About */
+
 .about {
   display: flex;
   justify-content: center;
@@ -384,7 +392,6 @@ section {
   border-right: 0.2rem solid var(--main-color);
 }
 
-/* about content */
 .about-content {
   text-align: center;
 }
@@ -406,6 +413,7 @@ section {
 }
 
 /* Education */
+
 .education {
   display: flex;
   justify-content: center;
@@ -481,7 +489,8 @@ section {
   padding-bottom: 0.5rem;
 }
 
-/* skills section */
+/* Skill */
+
 .skills {
   min-height: auto;
   padding-bottom: 5rem;
@@ -516,6 +525,7 @@ section {
   text-decoration: none;
   color: var(--text-color);
   font-size: 2.2rem;
+  padding-bottom: 1.1rem;
 }
 
 .link-project a::before {
@@ -552,7 +562,8 @@ section {
   justify-content: space-between;
 }
 
-/* footer */
+/* Footer */
+
 .footer {
   margin-top: 0.5rem;
   background-color: #fff;
